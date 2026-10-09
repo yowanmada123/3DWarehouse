@@ -1,12 +1,12 @@
 /* ==========================================================================
-   WareFlow — dummy 3D warehouse operations dashboard (Three.js)
+   MAGINTEK — dummy 3D warehouse operations dashboard (Three.js)
    Semua data di file ini adalah data dummy. Ubah BRAND / SITES sesuka hati.
    ========================================================================== */
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 
-const BRAND = 'WareFlow';
+const BRAND = 'MAGINTEK';
 
 /* ---------------------------------- Palette --------------------------------- */
 const C = {
@@ -1234,6 +1234,6 @@ async function boot() {
   setInterval(simulate, 3000);
   renderer.setAnimationLoop(frame);
   setTimeout(() => $('#loader').classList.add('hide'), 250);
-  window.__wareflow = { scene, camera, controls, entities, selectSite, selectEntity };
+  window.__magintek = { scene, camera, controls, entities, selectSite, selectEntity };
 }
 boot();
